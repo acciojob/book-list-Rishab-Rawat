@@ -12,27 +12,22 @@ document.getElementById('submit').addEventListener('click', function(event) {
     }
 
     const table = document.getElementById('book-list');
-    const row = table.insertRow();
+    const row = document.createElement('tr');
 
-    const cell1 = row.insertCell(0);
-    const cell2 = row.insertCell(1);
-    const cell3 = row.insertCell(2);
-    const cell4 = row.insertCell(3);
+    row.innerHTML = `
+        <td>${title}</td>
+        <td>${author}</td>
+        <td>${isbn}</td>
+        <td><button class="delete">Clear</button></td>
+    `;
 
-    cell1.textContent = title;
-    cell2.textContent = author;
-    cell3.textContent = isbn;
-
-    const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Clear';
-    deleteButton.classList.add('delete');
-    cell4.appendChild(deleteButton);
-
-    deleteButton.addEventListener('click', function() {
-        table.deleteRow(row.rowIndex);
-    });
+    table.appendChild(row);
 
     document.getElementById('title').value = '';
     document.getElementById('author').value = '';
     document.getElementById('isbn').value = '';
+
+    row.querySelector('.delete').addEventListener('click', function() {
+        table.removeChild(row);
+    });
 });
