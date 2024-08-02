@@ -1,32 +1,41 @@
-!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+ 
+<html>
+ 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBookList</title>
-    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
+ 
 <body>
-    <div class="container">
-        <h1>MyBookList</h1>
-        <div class="form-group">
-            <input type="text" id="title" placeholder="Title" required>
-            <input type="text" id="author" placeholder="Author" required>
-            <input type="text" id="isbn" placeholder="ISBN" required>
-            <button id="submit">Submit</button>
-        </div>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>ISBN#</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="book-list"></tbody>
-        </table>
-    </div>
-    <script src="scripts.js"></script>
+	<!-- the entire body must be written by student -->
+	<h1 class="title">My<span>Book</span>List</h1>
+	<div class="form-group">
+		<form>
+			<div>Title</div>
+	<input type="text" value="" name="title" id="title">
+	<div>Author</div>
+	<input type="text" value="" name="author" id="author">
+	<div>ISBN#</div>
+	<input type="text" value="" name="isbn" id="isbn">
+	<button id="submit">Add Book</button>
+		</form>
+	</div>
+	<table class="table table-striped">
+			<thead>
+			<tr class="border">
+				<th>Title</th>
+				<th>Author</th>
+				<th>ISBN#</th>
+				<th></th>
+			</tr>
+			</thead>
+			<tbody id="book-list">
+				
+			</tbody>
+		</table>
+    <script type="text/javascript" src="./script.js">
+</script>
+ 
 </body>
+ 
 </html>

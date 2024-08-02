@@ -1,67 +1,53 @@
 /*  your css code here. If applicable */
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+body{
+	width:90%;
+	margin:auto;
 }
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.title{
+	font-size:50px;
+	text-align:center;
 }
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
+span{
+	color:blue;
 }
-
-.form-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+input{
+	height:30px;
+	width:100%;
 }
-
-.form-group input {
-    flex: 1;
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+#submit{
+	background-color:#1877F2;
+	color:white;
+	padding:6px;
+	border-radius:3px;
+	border:0px;
 }
-
-.form-group button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #333;
-    color: white;
-    cursor: pointer;
+button:hover{
+	cursor:pointer;
 }
-
-.table {
-    width: 100%;
-    border-collapse: collapse;
+table{
+	margin-top:40px;
+	width:100%;
+	border-collapse:collapse;
 }
-
-.table th, .table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+tr{
+	border-bottom:2px solid #B0B0B0;
 }
-
-.table th {
-    background: #f4f4f4;
+tr.border{
+	border-bottom:2px solid black;
 }
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background: #f9f9f9;
+tr{
+	background-color:#F8F8F8;
 }
-
-.delete {
-    color: red;
-    cursor: pointer;
+th{
+	background-color:white;
+	width:27%;
+	text-align:left;
+}
+td,th{
+	padding:10px 5px;
+}
+.delete{
+	background-color:red;
+	border:none;
+	padding:2px;
 }
